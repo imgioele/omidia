@@ -15,7 +15,7 @@ body {
 
 .hero {
   text-align: center;
-  background-image: url('images/homeHeroBackground.jpg'); /* Sostituisci con il percorso della tua immagine */
+  background-image: url('homeHeroBackground.jpg'); /* Sostituisci con il percorso della tua immagine */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -222,7 +222,7 @@ nav a {
 }
 
 .contatti {
-  background-image: url('images/contatti.jpg'); /* Sostituisci con il percorso della tua immagine */
+  background-image: url('contatti.jpg'); /* Sostituisci con il percorso della tua immagine */
   background-size: cover;
   background-position: center;
   text-align: center;
