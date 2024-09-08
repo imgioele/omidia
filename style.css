@@ -1,0 +1,252 @@
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.hero {
+  text-align: center;
+  background-image: url('images/homeHeroBackground.jpg'); /* Sostituisci con il percorso della tua immagine */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+p {
+  color: #000;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.icon {
+  margin: 0 1rem;
+  color: #fff;
+  /* Aggiungi qui le tue regole per le icone */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1; /* Per assicurarti che il menu sia sopra gli altri elementi */
+  background-color: transparent;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #777;
+}
+
+.menu-item::after {
+  content: "";
+  display: block;
+  height: 2px; /* Regola lo spessore della linea */
+  width: 0;
+  background-color: #777;
+  margin-top: 5px; /* Regola lo spazio tra la voce del menu e la linea */
+  transition: width 0.3s ease; /* Aggiunge una transizione per un effetto più fluido */
+}
+
+.menu-item:hover::after {
+  width: 100%; /* Allarga la linea al passaggio del mouse */
+}
+
+.typing {
+  overflow: hidden; /* Nasconde il testo in eccesso */
+  border-right: .08em solid black; /* Simula il cursore della macchina da scrivere */
+  animation: blink 1s infinite;
+  color: #999;
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  white-space: nowrap; /* Impedisce l'avvolgimento del testo */
+  margin-left: 10px; /* Regola la distanza tra le scritte */
+  /* Aggiungi altri stili per personalizzare l'aspetto dell'h1 */
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+}
+
+.static-text {
+  /* Stile per il testo statico */
+  font-weight: lighter;
+  color: #000;
+}
+
+@keyframes blink {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+.chi-siamo-class {
+  background-color: black;
+  /* Sostituisci 'path/to/your/image.jpg' con il percorso effettivo della tua immagine */
+  background-size: cover; /* Adatta l'immagine per coprire tutto lo sfondo */
+  background-position: center; /* Centra l'immagine verticalmente e orizzontalmente */
+  filter: brightness(80%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paraChiSiamoLeft {
+  position: fixed;  
+  top: 30%;
+  left: 3%;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.paraChiSiamoLeftSub {
+  position: fixed;  
+  top: 47%;
+  left: 4%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: regular;
+  font-family: "Montserrat", sans-serif;
+}
+
+.servizi {
+  background-color: black; /* Ripristina il colore di sfondo nero */
+  color: white;
+  display: flex;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.servizi-sx {
+  width: 50%;
+  display: flex; /* Imposta il flexbox per il contenitore */
+  justify-content: center; /* Centra gli elementi all'interno del contenitore */
+  align-items: center; /* Centra gli elementi verticalmente */
+}
+
+.servizi-sx img {
+  max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.servizi-dx {
+  width: 50%;
+  text-align: right; /* Allinea il testo a destra */
+  margin-right: 5%;
+}
+
+.servizi-dx ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  font-size: 4rem;
+}
+
+.servizi-dx ul li {
+  position: relative;
+  flex: 1; /* Garantisce che gli elementi occupino lo stesso spazio */
+  margin-bottom: 10px; /* Aggiunge 20px di spazio tra gli elementi */
+  padding: 5px; /* Aggiunge 10px di padding interno */
+  line-height: 1.3; /* Aumenta l'altezza della linea del 50% */
+}
+
+.descrizione {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 1;
+  color: white;
+  font-size: 1rem;
+}
+
+.servizi-dx ul li:hover .descrizione {
+  opacity: 1;
+}
+
+.contatti {
+  background-image: url('images/contatti.jpg'); /* Sostituisci con il percorso della tua immagine */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100vh; /* Adatta l'altezza in base alle tue esigenze */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icona-container {
+  display: flex;
+  justify-content: center; /* Centra gli elementi orizzontalmente */
+  align-items: center; /* Centra gli elementi verticalmente */
+  gap: 20px; /* Spazio   
+ tra le icone */
+}
+
+.icona-container a {
+  color: black;
+  font-size: 3rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.icona-container a:hover {
+  color: red;
+}
+
